@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Package_QFP_Realtek)(type KiCad)(uri ${KIPRJMOD}/Package_QFP_Realtek.pretty)(options "")(descr ""))
+  (lib (name ISA_BUS_16Bit)(type KiCad)(uri ${KIPRJMOD}/Bus_AT_without_Silkscreen.pretty)(options "")(descr ""))
+  (lib (name DIP32and28)(type KiCad)(uri ${KIPRJMOD}/DIP32and28.pretty)(options "")(descr ""))
+)
