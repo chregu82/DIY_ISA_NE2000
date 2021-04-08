@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP PE-85728NL
+F https://www.mouser.ch/datasheet/2/336/pulse_07132018_PE-65728NL-1381223.pdf
+$ENDCMP
+#
 #End Doc Library

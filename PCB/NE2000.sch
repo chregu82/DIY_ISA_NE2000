@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:NE2000-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -413,19 +414,6 @@ F 3 "" H 1200 4550 50  0001 C CNN
 	1    1200 4550
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR0116
-U 1 1 606C34AB
-P 1750 6450
-F 0 "#PWR0116" H 1750 6300 50  0001 C CNN
-F 1 "+5V" V 1765 6578 50  0000 L CNN
-F 2 "" H 1750 6450 50  0001 C CNN
-F 3 "" H 1750 6450 50  0001 C CNN
-	1    1750 6450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1750 6450 2150 6450
 Text GLabel 2150 1850 0    50   Input ~ 0
 RESET
 Text GLabel 5100 3900 0    50   Input ~ 0
@@ -1735,8 +1723,8 @@ U 1 1 60884031
 P 1200 4700
 F 0 "C17" H 1315 4746 50  0000 L CNN
 F 1 "C" H 1315 4655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1238 4550 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/396/mlcc02_e-1307760.pdf" H 1200 4700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 1238 4550 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/281/1/GRM32EC81C476KE15_01A-1988154.pdf" H 1200 4700 50  0001 C CNN
 	1    1200 4700
 	1    0    0    -1  
 $EndComp
@@ -1764,8 +1752,8 @@ U 1 1 60895C97
 P 1200 2700
 F 0 "C16" H 1315 2746 50  0000 L CNN
 F 1 "C" H 1315 2655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1238 2550 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/396/mlcc02_e-1307760.pdf" H 1200 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 1238 2550 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/281/1/GRM32EC81C476KE15_01A-1988154.pdf" H 1200 2700 50  0001 C CNN
 	1    1200 2700
 	1    0    0    -1  
 $EndComp
@@ -1866,4 +1854,40 @@ F 3 "" H 10850 10500 50  0001 C CNN
 	1    10850 10500
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2150 6450
+$Comp
+L 10Base2:PE-85728NL TR2
+U 1 1 60779AED
+P 10900 6350
+F 0 "TR2" H 10900 7315 50  0000 C CNN
+F 1 "PE-85728NL" H 10900 7224 50  0000 C CNN
+F 2 "Transformer_SMD:Transformer_Pulse_H1100NL" H 10900 5500 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/336/pulse_07132018_PE-65728NL-1381223.pdf" H 11600 7750 50  0001 C CNN
+	1    10900 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 5350 2    50   Input ~ 0
+TX+
+Text GLabel 10600 6650 0    50   Input ~ 0
+TX+
+Text GLabel 10600 7050 0    50   Input ~ 0
+TX-
+Text GLabel 7200 5450 2    50   Input ~ 0
+TX-
+Text GLabel 10600 6150 0    50   Input ~ 0
+RX+
+Text GLabel 7200 5050 2    50   Input ~ 0
+RX+
+Text GLabel 10600 6550 0    50   Input ~ 0
+RX-
+Text GLabel 7200 5150 2    50   Input ~ 0
+RX-
+Text GLabel 10600 6050 0    50   Input ~ 0
+CD-
+Text GLabel 7200 4850 2    50   Input ~ 0
+CD-
+Text GLabel 10600 5650 0    50   Input ~ 0
+CD+
+Text GLabel 7200 4750 2    50   Input ~ 0
+CD+
 $EndSCHEMATC
