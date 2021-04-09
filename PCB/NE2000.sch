@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:NE2000-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -162,19 +161,6 @@ F 3 "" H 1750 1750 50  0001 C CNN
 	1    1750 1750
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 606A0842
-P 1750 6650
-F 0 "#PWR0104" H 1750 6400 50  0001 C CNN
-F 1 "GND" V 1755 6522 50  0000 R CNN
-F 2 "" H 1750 6650 50  0001 C CNN
-F 3 "" H 1750 6650 50  0001 C CNN
-	1    1750 6650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1750 6650 2150 6650
 $Comp
 L power:GND #PWR0105
 U 1 1 606A2B5F
@@ -1363,25 +1349,14 @@ F 3 "" H 8500 8450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0131
-U 1 1 607E2474
-P 9500 8050
-F 0 "#PWR0131" H 9500 7800 50  0001 C CNN
-F 1 "GND" V 9505 7922 50  0000 R CNN
-F 2 "" H 9500 8050 50  0001 C CNN
-F 3 "" H 9500 8050 50  0001 C CNN
-	1    9500 8050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:-9V #PWR0132
 U 1 1 607E2F71
-P 9500 8450
-F 0 "#PWR0132" H 9500 8325 50  0001 C CNN
-F 1 "-9V" V 9515 8578 50  0000 L CNN
-F 2 "" H 9500 8450 50  0001 C CNN
-F 3 "" H 9500 8450 50  0001 C CNN
-	1    9500 8450
+P 10050 8450
+F 0 "#PWR0132" H 10050 8325 50  0001 C CNN
+F 1 "-9V" V 10065 8578 50  0000 L CNN
+F 2 "" H 10050 8450 50  0001 C CNN
+F 3 "" H 10050 8450 50  0001 C CNN
+	1    10050 8450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1393,17 +1368,6 @@ F 1 "DP8392CN" H 13250 7024 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 13250 5900 50  0001 C CNN
 F 3 "" H 14550 7900 50  0001 C CNN
 	1    13250 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 607F9F62
-P 13750 7050
-F 0 "#PWR01" H 13750 6800 50  0001 C CNN
-F 1 "GND" H 13755 6877 50  0000 C CNN
-F 2 "" H 13750 7050 50  0001 C CNN
-F 3 "" H 13750 7050 50  0001 C CNN
-	1    13750 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1458,17 +1422,6 @@ Connection ~ 12800 6400
 Wire Wire Line
 	12800 6400 12850 6400
 $Comp
-L power:GND #PWR03
-U 1 1 60814F4F
-P 13650 6100
-F 0 "#PWR03" H 13650 5850 50  0001 C CNN
-F 1 "GND" V 13655 5972 50  0000 R CNN
-F 2 "" H 13650 6100 50  0001 C CNN
-F 3 "" H 13650 6100 50  0001 C CNN
-	1    13650 6100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:D D1
 U 1 1 60815437
 P 14200 6100
@@ -1479,18 +1432,6 @@ F 3 "https://www.mouser.ch/datasheet/2/427/1n4150w-1767381.pdf" H 14200 6100 50 
 	1    14200 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13650 6200 13950 6200
-Wire Wire Line
-	13950 6200 13950 6100
-Wire Wire Line
-	13950 6100 14050 6100
-Wire Wire Line
-	13650 6300 14000 6300
-Wire Wire Line
-	14000 6300 14000 6200
-Wire Wire Line
-	14000 6200 14350 6200
 Wire Wire Line
 	14350 6200 14350 6100
 $Comp
@@ -1722,7 +1663,7 @@ L Device:C C17
 U 1 1 60884031
 P 1200 4700
 F 0 "C17" H 1315 4746 50  0000 L CNN
-F 1 "C" H 1315 4655 50  0000 L CNN
+F 1 "47u" H 1315 4655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 1238 4550 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/281/1/GRM32EC81C476KE15_01A-1988154.pdf" H 1200 4700 50  0001 C CNN
 	1    1200 4700
@@ -1751,7 +1692,7 @@ L Device:C C16
 U 1 1 60895C97
 P 1200 2700
 F 0 "C16" H 1315 2746 50  0000 L CNN
-F 1 "C" H 1315 2655 50  0000 L CNN
+F 1 "47u" H 1315 2655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 1238 2550 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/281/1/GRM32EC81C476KE15_01A-1988154.pdf" H 1200 2700 50  0001 C CNN
 	1    1200 2700
@@ -1809,7 +1750,7 @@ Connection ~ 1550 4550
 Wire Wire Line
 	1550 4550 2150 4550
 Wire Wire Line
-	1750 1750 2150 1750
+	1750 1750 1900 1750
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 608A7446
@@ -1858,36 +1799,328 @@ NoConn ~ 2150 6450
 $Comp
 L 10Base2:PE-85728NL TR2
 U 1 1 60779AED
-P 10900 6350
-F 0 "TR2" H 10900 7315 50  0000 C CNN
-F 1 "PE-85728NL" H 10900 7224 50  0000 C CNN
-F 2 "Transformer_SMD:Transformer_Pulse_H1100NL" H 10900 5500 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/336/pulse_07132018_PE-65728NL-1381223.pdf" H 11600 7750 50  0001 C CNN
-	1    10900 6350
+P 10900 6400
+F 0 "TR2" H 10900 7365 50  0000 C CNN
+F 1 "PE-85728NL" H 10900 7274 50  0000 C CNN
+F 2 "Transformer_SMD:Transformer_Pulse_H1100NL" H 10900 5550 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/336/pulse_07132018_PE-65728NL-1381223.pdf" H 11600 7800 50  0001 C CNN
+	1    10900 6400
 	1    0    0    -1  
 $EndComp
 Text GLabel 7200 5350 2    50   Input ~ 0
 TX+
-Text GLabel 10600 6650 0    50   Input ~ 0
+Text GLabel 10600 6700 0    50   Input ~ 0
 TX+
-Text GLabel 10600 7050 0    50   Input ~ 0
+Text GLabel 10600 7100 0    50   Input ~ 0
 TX-
 Text GLabel 7200 5450 2    50   Input ~ 0
 TX-
-Text GLabel 10600 6150 0    50   Input ~ 0
+Text GLabel 10600 6200 0    50   Input ~ 0
 RX+
 Text GLabel 7200 5050 2    50   Input ~ 0
 RX+
-Text GLabel 10600 6550 0    50   Input ~ 0
+Text GLabel 10600 6600 0    50   Input ~ 0
 RX-
 Text GLabel 7200 5150 2    50   Input ~ 0
 RX-
-Text GLabel 10600 6050 0    50   Input ~ 0
+Text GLabel 10600 6100 0    50   Input ~ 0
 CD-
 Text GLabel 7200 4850 2    50   Input ~ 0
 CD-
-Text GLabel 10600 5650 0    50   Input ~ 0
+Text GLabel 10600 5700 0    50   Input ~ 0
 CD+
 Text GLabel 7200 4750 2    50   Input ~ 0
 CD+
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 607109EC
+P 600 11100
+F 0 "H9" H 700 11146 50  0000 L CNN
+F 1 "MountingHole" H 700 11055 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 11100 50  0001 C CNN
+F 3 "~" H 600 11100 50  0001 C CNN
+	1    600  11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 6071198A
+P 600 10900
+F 0 "H8" H 700 10946 50  0000 L CNN
+F 1 "MountingHole" H 700 10855 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 10900 50  0001 C CNN
+F 3 "~" H 600 10900 50  0001 C CNN
+	1    600  10900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 60712463
+P 600 10700
+F 0 "H7" H 700 10746 50  0000 L CNN
+F 1 "MountingHole" H 700 10655 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 10700 50  0001 C CNN
+F 3 "~" H 600 10700 50  0001 C CNN
+	1    600  10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 60713BDB
+P 600 10500
+F 0 "H6" H 700 10546 50  0000 L CNN
+F 1 "MountingHole" H 700 10455 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 10500 50  0001 C CNN
+F 3 "~" H 600 10500 50  0001 C CNN
+	1    600  10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 607157E2
+P 600 9900
+F 0 "H3" H 700 9946 50  0000 L CNN
+F 1 "MountingHole" H 700 9855 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 9900 50  0001 C CNN
+F 3 "~" H 600 9900 50  0001 C CNN
+	1    600  9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60724CD1
+P 600 10100
+F 0 "H4" H 700 10146 50  0000 L CNN
+F 1 "MountingHole" H 700 10055 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 10100 50  0001 C CNN
+F 3 "~" H 600 10100 50  0001 C CNN
+	1    600  10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60737F12
+P 600 10300
+F 0 "H5" H 700 10346 50  0000 L CNN
+F 1 "MountingHole" H 700 10255 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 10300 50  0001 C CNN
+F 3 "~" H 600 10300 50  0001 C CNN
+	1    600  10300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 6650
+$Comp
+L power:GNDA #PWR01
+U 1 1 60715478
+P 10050 8050
+F 0 "#PWR01" H 10050 7800 50  0001 C CNN
+F 1 "GNDA" V 10055 7922 50  0000 R CNN
+F 2 "" H 10050 8050 50  0001 C CNN
+F 3 "" H 10050 8050 50  0001 C CNN
+	1    10050 8050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR03
+U 1 1 60715A88
+P 13650 6100
+F 0 "#PWR03" H 13650 5850 50  0001 C CNN
+F 1 "GNDA" V 13655 5972 50  0000 R CNN
+F 2 "" H 13650 6100 50  0001 C CNN
+F 3 "" H 13650 6100 50  0001 C CNN
+	1    13650 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14100 6300 14100 6200
+Wire Wire Line
+	14100 6200 14350 6200
+Wire Wire Line
+	13650 6300 14100 6300
+Wire Wire Line
+	14000 6200 14000 6100
+Wire Wire Line
+	14000 6100 14050 6100
+Wire Wire Line
+	13650 6200 14000 6200
+$Comp
+L power:GNDA #PWR014
+U 1 1 607207A0
+P 13750 7050
+F 0 "#PWR014" H 13750 6800 50  0001 C CNN
+F 1 "GNDA" H 13755 6877 50  0000 C CNN
+F 2 "" H 13750 7050 50  0001 C CNN
+F 3 "" H 13750 7050 50  0001 C CNN
+	1    13750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 607215D5
+P 9750 8250
+F 0 "C18" H 9865 8296 50  0000 L CNN
+F 1 "47u" H 9865 8205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 9788 8100 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/281/1/GRM32EC81C476KE15_01A-1988154.pdf" H 9750 8250 50  0001 C CNN
+	1    9750 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 8050 9750 8050
+Wire Wire Line
+	9750 8050 9750 8100
+Wire Wire Line
+	9750 8050 10050 8050
+Connection ~ 9750 8050
+Wire Wire Line
+	9500 8450 9750 8450
+Wire Wire Line
+	9750 8450 9750 8400
+Wire Wire Line
+	9750 8450 10050 8450
+Connection ~ 9750 8450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60738F89
+P 1900 1750
+F 0 "#FLG0101" H 1900 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 1923 50  0000 C CNN
+F 2 "" H 1900 1750 50  0001 C CNN
+F 3 "~" H 1900 1750 50  0001 C CNN
+	1    1900 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 1750
+Wire Wire Line
+	1900 1750 2150 1750
+Wire Wire Line
+	11200 6600 12400 6600
+Wire Wire Line
+	11200 6200 12100 6200
+Wire Wire Line
+	12600 6200 12600 6300
+Wire Wire Line
+	12600 6300 12850 6300
+Wire Wire Line
+	11200 6100 11800 6100
+Wire Wire Line
+	12650 6100 12650 6200
+Wire Wire Line
+	12650 6200 12850 6200
+Wire Wire Line
+	11200 5700 11300 5700
+Wire Wire Line
+	12700 6100 12850 6100
+Wire Wire Line
+	11300 5700 11300 6050
+Wire Wire Line
+	11300 6050 11500 6050
+Wire Wire Line
+	12700 6050 12700 6100
+$Comp
+L Device:R R22
+U 1 1 6077A51D
+P 11500 5800
+F 0 "R22" H 11570 5846 50  0000 L CNN
+F 1 "510" H 11570 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11430 5800 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11500 5800 50  0001 C CNN
+	1    11500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 6077B2EA
+P 11800 5800
+F 0 "R23" H 11870 5846 50  0000 L CNN
+F 1 "510" H 11870 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11730 5800 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11800 5800 50  0001 C CNN
+	1    11800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 6077B404
+P 12100 5800
+F 0 "R25" H 12170 5846 50  0000 L CNN
+F 1 "510" H 12170 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 5800 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 12100 5800 50  0001 C CNN
+	1    12100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 6077B61B
+P 12400 5800
+F 0 "R26" H 12470 5846 50  0000 L CNN
+F 1 "510" H 12470 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12330 5800 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 12400 5800 50  0001 C CNN
+	1    12400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-9V #PWR015
+U 1 1 6077B753
+P 11500 5450
+F 0 "#PWR015" H 11500 5325 50  0001 C CNN
+F 1 "-9V" V 11515 5578 50  0000 L CNN
+F 2 "" H 11500 5450 50  0001 C CNN
+F 3 "" H 11500 5450 50  0001 C CNN
+	1    11500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 5450 11500 5550
+Wire Wire Line
+	11500 5550 11800 5550
+Wire Wire Line
+	11800 5550 11800 5650
+Connection ~ 11500 5550
+Wire Wire Line
+	11500 5550 11500 5650
+Wire Wire Line
+	11800 5550 12100 5550
+Wire Wire Line
+	12100 5550 12100 5650
+Connection ~ 11800 5550
+Wire Wire Line
+	12100 5550 12400 5550
+Wire Wire Line
+	12400 5550 12400 5650
+Connection ~ 12100 5550
+Wire Wire Line
+	11500 5950 11500 6050
+Connection ~ 11500 6050
+Wire Wire Line
+	11500 6050 12700 6050
+Wire Wire Line
+	11800 5950 11800 6100
+Connection ~ 11800 6100
+Wire Wire Line
+	11800 6100 12650 6100
+Wire Wire Line
+	12100 5950 12100 6200
+Connection ~ 12100 6200
+Wire Wire Line
+	12100 6200 12600 6200
+Wire Wire Line
+	12400 5950 12400 6600
+Connection ~ 12400 6600
+Wire Wire Line
+	12400 6600 12850 6600
+Wire Wire Line
+	11200 7100 11500 7100
+Wire Wire Line
+	11500 7100 11500 7000
+Wire Wire Line
+	12400 7000 12400 6800
+Wire Wire Line
+	12400 6800 12850 6800
+Wire Wire Line
+	11200 6700 12850 6700
+Wire Wire Line
+	11500 7000 12400 7000
 $EndSCHEMATC
