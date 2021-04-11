@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:NE2000-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -861,36 +862,36 @@ F 3 "https://www.mouser.ch/datasheet/2/96/209-210-1133513.pdf" H 14450 1850 50  
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x05 SW2
+L Switch:SW_DIP_x05 SW4
 U 1 1 6072D5E2
+P 14450 3950
+F 0 "SW4" H 14450 4417 50  0000 C CNN
+F 1 "ROM cfg" H 14450 4326 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx05_Slide_6.7x14.26mm_W7.62mm_P2.54mm_LowProfile" H 14450 3950 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/96/209-210-1133513.pdf" H 14450 3950 50  0001 C CNN
+	1    14450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x03 SW2
+U 1 1 6072EDF7
 P 14450 2650
 F 0 "SW2" H 14450 3117 50  0000 C CNN
-F 1 "ROM cfg" H 14450 3026 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx05_Slide_6.7x14.26mm_W7.62mm_P2.54mm_LowProfile" H 14450 2650 50  0001 C CNN
+F 1 "IRQ" H 14450 3026 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W7.62mm_P2.54mm_LowProfile" H 14450 2650 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/96/209-210-1133513.pdf" H 14450 2650 50  0001 C CNN
 	1    14450 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x03 SW3
-U 1 1 6072EDF7
-P 14450 3550
-F 0 "SW3" H 14450 4017 50  0000 C CNN
-F 1 "IRQ" H 14450 3926 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W7.62mm_P2.54mm_LowProfile" H 14450 3550 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/96/209-210-1133513.pdf" H 14450 3550 50  0001 C CNN
-	1    14450 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DIP_x02 SW4
+L Switch:SW_DIP_x02 SW3
 U 1 1 607305D4
-P 14450 4150
-F 0 "SW4" H 14450 4517 50  0000 C CNN
-F 1 "Medium" H 14450 4426 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile" H 14450 4150 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/96/209-210-1133513.pdf" H 14450 4150 50  0001 C CNN
-	1    14450 4150
+P 14450 3250
+F 0 "SW3" H 14450 3617 50  0000 C CNN
+F 1 "Medium" H 14450 3526 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile" H 14450 3250 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/96/209-210-1133513.pdf" H 14450 3250 50  0001 C CNN
+	1    14450 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -960,96 +961,41 @@ F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 1950 50  
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R9
-U 1 1 6076FC89
-P 14900 2450
-F 0 "R9" V 15000 2450 50  0001 C CNN
-F 1 "10K" V 14900 2450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2450 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2450 50  0001 C CNN
-	1    14900 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 6076FE27
-P 14900 2550
-F 0 "R10" V 15000 2550 50  0001 C CNN
-F 1 "10K" V 14900 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2550 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2550 50  0001 C CNN
-	1    14900 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 6076FFF4
-P 14900 2650
-F 0 "R11" V 15000 2650 50  0001 C CNN
-F 1 "10K" V 14900 2650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2650 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2650 50  0001 C CNN
-	1    14900 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 607700DC
-P 14900 2750
-F 0 "R12" V 15000 2750 50  0001 C CNN
-F 1 "10K" V 14900 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2750 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2750 50  0001 C CNN
-	1    14900 2750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 6077024A
-P 14900 2850
-F 0 "R13" V 15000 2850 50  0001 C CNN
-F 1 "10K" V 14900 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2850 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2850 50  0001 C CNN
-	1    14900 2850
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R14
-U 1 1 607703CB
-P 14900 3350
-F 0 "R14" V 15000 3350 50  0001 C CNN
-F 1 "10K" V 14900 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3350 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3350 50  0001 C CNN
-	1    14900 3350
+U 1 1 6076FC89
+P 14900 3750
+F 0 "R14" V 15000 3750 50  0001 C CNN
+F 1 "10K" V 14900 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3750 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3750 50  0001 C CNN
+	1    14900 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R15
-U 1 1 6077056E
-P 14900 3450
-F 0 "R15" V 15000 3450 50  0001 C CNN
-F 1 "10K" V 14900 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3450 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3450 50  0001 C CNN
-	1    14900 3450
+U 1 1 6076FE27
+P 14900 3850
+F 0 "R15" V 15000 3850 50  0001 C CNN
+F 1 "10K" V 14900 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3850 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3850 50  0001 C CNN
+	1    14900 3850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R16
-U 1 1 60770700
-P 14900 3550
-F 0 "R16" V 15000 3550 50  0001 C CNN
-F 1 "10K" V 14900 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3550 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3550 50  0001 C CNN
-	1    14900 3550
+U 1 1 6076FFF4
+P 14900 3950
+F 0 "R16" V 15000 3950 50  0001 C CNN
+F 1 "10K" V 14900 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3950 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3950 50  0001 C CNN
+	1    14900 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R17
-U 1 1 6077084C
+U 1 1 607700DC
 P 14900 4050
 F 0 "R17" V 15000 4050 50  0001 C CNN
 F 1 "10K" V 14900 4050 50  0000 C CNN
@@ -1060,13 +1006,68 @@ F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 4050 50  
 $EndComp
 $Comp
 L Device:R R18
-U 1 1 60770B00
+U 1 1 6077024A
 P 14900 4150
 F 0 "R18" V 15000 4150 50  0001 C CNN
 F 1 "10K" V 14900 4150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 4150 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 4150 50  0001 C CNN
 	1    14900 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 607703CB
+P 14900 2450
+F 0 "R9" V 15000 2450 50  0001 C CNN
+F 1 "10K" V 14900 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2450 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2450 50  0001 C CNN
+	1    14900 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6077056E
+P 14900 2550
+F 0 "R10" V 15000 2550 50  0001 C CNN
+F 1 "10K" V 14900 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2550 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2550 50  0001 C CNN
+	1    14900 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 60770700
+P 14900 2650
+F 0 "R11" V 15000 2650 50  0001 C CNN
+F 1 "10K" V 14900 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 2650 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 2650 50  0001 C CNN
+	1    14900 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 6077084C
+P 14900 3150
+F 0 "R12" V 15000 3150 50  0001 C CNN
+F 1 "10K" V 14900 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3150 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3150 50  0001 C CNN
+	1    14900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 60770B00
+P 14900 3250
+F 0 "R13" V 15000 3250 50  0001 C CNN
+F 1 "10K" V 14900 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 3250 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 14900 3250 50  0001 C CNN
+	1    14900 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1102,7 +1103,20 @@ Wire Wire Line
 Connection ~ 15050 1850
 Wire Wire Line
 	15050 1850 15050 1950
-Connection ~ 15050 1950
+Wire Wire Line
+	15050 3250 15050 3750
+Connection ~ 15050 3750
+Wire Wire Line
+	15050 3750 15050 3850
+Connection ~ 15050 3850
+Wire Wire Line
+	15050 3850 15050 3950
+Connection ~ 15050 3950
+Wire Wire Line
+	15050 3950 15050 4050
+Connection ~ 15050 4050
+Wire Wire Line
+	15050 4050 15050 4150
 Wire Wire Line
 	15050 1950 15050 2450
 Connection ~ 15050 2450
@@ -1111,31 +1125,9 @@ Wire Wire Line
 Connection ~ 15050 2550
 Wire Wire Line
 	15050 2550 15050 2650
-Connection ~ 15050 2650
 Wire Wire Line
-	15050 2650 15050 2750
-Connection ~ 15050 2750
-Wire Wire Line
-	15050 2750 15050 2850
-Connection ~ 15050 2850
-Wire Wire Line
-	15050 2850 15050 3350
-Connection ~ 15050 3350
-Wire Wire Line
-	15050 3350 15050 3450
-Connection ~ 15050 3450
-Wire Wire Line
-	15050 3450 15050 3550
-Connection ~ 15050 3550
-Wire Wire Line
-	15050 3550 15050 4050
-Connection ~ 15050 4050
-Wire Wire Line
-	15050 4050 15050 4150
-Connection ~ 15050 4150
-Wire Wire Line
-	15050 4150 15050 4650
-Connection ~ 15050 4650
+	15050 3150 15050 3250
+Connection ~ 15050 3250
 Wire Wire Line
 	15050 4650 15050 4750
 Text GLabel 7200 4150 2    50   Input ~ 0
@@ -1172,29 +1164,29 @@ Text GLabel 7200 2750 2    50   Input ~ 0
 BA19
 Text GLabel 7200 2650 2    50   Input ~ 0
 BA20
-Text GLabel 14150 2450 0    50   Input ~ 0
+Text GLabel 14150 3750 0    50   Input ~ 0
 BA16
-Text GLabel 14150 2550 0    50   Input ~ 0
+Text GLabel 14150 3850 0    50   Input ~ 0
 BA17
-Text GLabel 14150 2650 0    50   Input ~ 0
+Text GLabel 14150 3950 0    50   Input ~ 0
 BA18
-Text GLabel 14150 2750 0    50   Input ~ 0
+Text GLabel 14150 4050 0    50   Input ~ 0
 BA19
-Text GLabel 14150 2850 0    50   Input ~ 0
+Text GLabel 14150 4150 0    50   Input ~ 0
 BA20
 Text GLabel 7200 3750 2    50   Input ~ 0
 BD4
-Text GLabel 14150 3350 0    50   Input ~ 0
+Text GLabel 14150 2450 0    50   Input ~ 0
 BD4
-Text GLabel 14150 3450 0    50   Input ~ 0
+Text GLabel 14150 2550 0    50   Input ~ 0
 BD5
-Text GLabel 14150 3550 0    50   Input ~ 0
+Text GLabel 14150 2650 0    50   Input ~ 0
 BD6
-Text GLabel 14150 4050 0    50   Input ~ 0
+Text GLabel 14150 3150 0    50   Input ~ 0
 BD7
 Text GLabel 7200 3250 2    50   Input ~ 0
 BA14
-Text GLabel 14150 4150 0    50   Input ~ 0
+Text GLabel 14150 3250 0    50   Input ~ 0
 BA14
 $Comp
 L Memory_Flash:SST39SF040 U3
@@ -1809,9 +1801,9 @@ F 3 "https://www.mouser.ch/datasheet/2/336/pulse_07132018_PE-65728NL-1381223.pdf
 $EndComp
 Text GLabel 7200 5350 2    50   Input ~ 0
 TX+
-Text GLabel 10600 6700 0    50   Input ~ 0
+Text GLabel 10100 6700 0    50   Input ~ 0
 TX+
-Text GLabel 10600 7100 0    50   Input ~ 0
+Text GLabel 10100 7100 0    50   Input ~ 0
 TX-
 Text GLabel 7200 5450 2    50   Input ~ 0
 TX-
@@ -2123,4 +2115,69 @@ Wire Wire Line
 	11200 6700 12850 6700
 Wire Wire Line
 	11500 7000 12400 7000
+$Comp
+L Device:R R27
+U 1 1 6072A47C
+P 10600 7400
+F 0 "R27" H 10670 7446 50  0000 L CNN
+F 1 "270" H 10670 7355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10530 7400 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/dcrcwe3-1762152.pdf" H 10600 7400 50  0001 C CNN
+	1    10600 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 6072BB38
+P 10300 7400
+F 0 "R24" H 10370 7446 50  0000 L CNN
+F 1 "270" H 10370 7355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10230 7400 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/dcrcwe3-1762152.pdf" H 10300 7400 50  0001 C CNN
+	1    10300 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 6700 10300 6700
+Wire Wire Line
+	10100 7100 10600 7100
+Wire Wire Line
+	10300 7250 10300 6700
+Connection ~ 10300 6700
+Wire Wire Line
+	10300 6700 10100 6700
+Wire Wire Line
+	10600 7250 10600 7100
+Connection ~ 10600 7100
+$Comp
+L power:GND #PWR016
+U 1 1 6074F128
+P 10300 7550
+F 0 "#PWR016" H 10300 7300 50  0001 C CNN
+F 1 "GND" H 10305 7377 50  0000 C CNN
+F 2 "" H 10300 7550 50  0001 C CNN
+F 3 "" H 10300 7550 50  0001 C CNN
+	1    10300 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 6074F419
+P 10600 7550
+F 0 "#PWR017" H 10600 7300 50  0001 C CNN
+F 1 "GND" H 10605 7377 50  0000 C CNN
+F 2 "" H 10600 7550 50  0001 C CNN
+F 3 "" H 10600 7550 50  0001 C CNN
+	1    10600 7550
+	1    0    0    -1  
+$EndComp
+Connection ~ 15050 1950
+Wire Wire Line
+	15050 2650 15050 3150
+Connection ~ 15050 3150
+Connection ~ 15050 2650
+Wire Wire Line
+	15050 4150 15050 4650
+Connection ~ 15050 4150
+Connection ~ 15050 4650
 $EndSCHEMATC
