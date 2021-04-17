@@ -1,6 +1,25 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# BNC_shield
+#
+DEF BNC_shield J 0 40 Y Y 1 F N
+F0 "J" 0 250 50 H V C CNN
+F1 "BNC_shield" 0 150 50 H V C CNN
+F2 "" 500 450 50 H I C CNN
+F3 "" 500 450 50 H I C CNN
+DRAW
+A -2 0 71 1636 0 1 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 1 1 10 N 70 0 -70 -20
+C 0 0 20 1 1 8 N
+P 2 1 1 0 -100 0 -20 0 N
+P 2 1 1 0 0 -100 0 -70 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 0 -200 100 U 50 50 1 1 P
+X ~ 3 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # DP8392CN
 #
 DEF DP8392CN U 0 40 Y Y 1 F N

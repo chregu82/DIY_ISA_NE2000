@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:NE2000-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1361,17 +1360,6 @@ F 3 "https://www.mouser.ch/datasheet/2/427/1n4150w-1767381.pdf" H 14200 6100 50 
 $EndComp
 Wire Wire Line
 	14350 6200 14350 6100
-$Comp
-L Connector:Conn_Coaxial J3
-U 1 1 6081E2FE
-P 14850 6100
-F 0 "J3" H 14950 6075 50  0000 L CNN
-F 1 "BNC" H 14950 5984 50  0000 L CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 14850 6100 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/18/031_71052_customer_drawing-1820911.pdf" H 14850 6100 50  0001 C CNN
-	1    14850 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14350 6100 14650 6100
 Connection ~ 14350 6100
@@ -1717,19 +1705,8 @@ CD+
 $Comp
 L Mechanical:MountingHole H9
 U 1 1 607109EC
-P 600 11100
-F 0 "H9" H 700 11146 50  0000 L CNN
-F 1 "MountingHole" H 700 11055 50  0000 L CNN
-F 2 "ISA_BUS_16Bit:Cutline" H 600 11100 50  0001 C CNN
-F 3 "~" H 600 11100 50  0001 C CNN
-	1    600  11100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H8
-U 1 1 6071198A
 P 600 10900
-F 0 "H8" H 700 10946 50  0000 L CNN
+F 0 "H9" H 700 10946 50  0000 L CNN
 F 1 "MountingHole" H 700 10855 50  0000 L CNN
 F 2 "ISA_BUS_16Bit:Cutline" H 600 10900 50  0001 C CNN
 F 3 "~" H 600 10900 50  0001 C CNN
@@ -1737,10 +1714,10 @@ F 3 "~" H 600 10900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H7
-U 1 1 60712463
+L Mechanical:MountingHole H8
+U 1 1 6071198A
 P 600 10700
-F 0 "H7" H 700 10746 50  0000 L CNN
+F 0 "H8" H 700 10746 50  0000 L CNN
 F 1 "MountingHole" H 700 10655 50  0000 L CNN
 F 2 "ISA_BUS_16Bit:Cutline" H 600 10700 50  0001 C CNN
 F 3 "~" H 600 10700 50  0001 C CNN
@@ -1748,10 +1725,10 @@ F 3 "~" H 600 10700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H6
-U 1 1 60713BDB
+L Mechanical:MountingHole H7
+U 1 1 60712463
 P 600 10500
-F 0 "H6" H 700 10546 50  0000 L CNN
+F 0 "H7" H 700 10546 50  0000 L CNN
 F 1 "MountingHole" H 700 10455 50  0000 L CNN
 F 2 "ISA_BUS_16Bit:Cutline" H 600 10500 50  0001 C CNN
 F 3 "~" H 600 10500 50  0001 C CNN
@@ -1759,10 +1736,32 @@ F 3 "~" H 600 10500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Mechanical:MountingHole H6
+U 1 1 60713BDB
+P 600 10300
+F 0 "H6" H 700 10346 50  0000 L CNN
+F 1 "MountingHole" H 700 10255 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 10300 50  0001 C CNN
+F 3 "~" H 600 10300 50  0001 C CNN
+	1    600  10300
+	1    0    0    -1  
+$EndComp
+$Comp
 L Mechanical:MountingHole H3
 U 1 1 607157E2
+P 600 9700
+F 0 "H3" H 700 9746 50  0000 L CNN
+F 1 "MountingHole" H 700 9655 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 9700 50  0001 C CNN
+F 3 "~" H 600 9700 50  0001 C CNN
+	1    600  9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60724CD1
 P 600 9900
-F 0 "H3" H 700 9946 50  0000 L CNN
+F 0 "H4" H 700 9946 50  0000 L CNN
 F 1 "MountingHole" H 700 9855 50  0000 L CNN
 F 2 "ISA_BUS_16Bit:Cutline" H 600 9900 50  0001 C CNN
 F 3 "~" H 600 9900 50  0001 C CNN
@@ -1770,25 +1769,14 @@ F 3 "~" H 600 9900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
-U 1 1 60724CD1
+L Mechanical:MountingHole H5
+U 1 1 60737F12
 P 600 10100
-F 0 "H4" H 700 10146 50  0000 L CNN
+F 0 "H5" H 700 10146 50  0000 L CNN
 F 1 "MountingHole" H 700 10055 50  0000 L CNN
 F 2 "ISA_BUS_16Bit:Cutline" H 600 10100 50  0001 C CNN
 F 3 "~" H 600 10100 50  0001 C CNN
 	1    600  10100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 60737F12
-P 600 10300
-F 0 "H5" H 700 10346 50  0000 L CNN
-F 1 "MountingHole" H 700 10255 50  0000 L CNN
-F 2 "ISA_BUS_16Bit:Cutline" H 600 10300 50  0001 C CNN
-F 3 "~" H 600 10300 50  0001 C CNN
-	1    600  10300
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2150 6650
@@ -1923,10 +1911,10 @@ F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R25
+L Device:R R24
 U 1 1 6077B404
 P 12100 5800
-F 0 "R25" H 12170 5846 50  0000 L CNN
+F 0 "R24" H 12170 5846 50  0000 L CNN
 F 1 "510" H 12170 5755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 5800 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 12100 5800 50  0001 C CNN
@@ -1934,10 +1922,10 @@ F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R26
+L Device:R R25
 U 1 1 6077B61B
 P 12400 5800
-F 0 "R26" H 12470 5846 50  0000 L CNN
+F 0 "R25" H 12470 5846 50  0000 L CNN
 F 1 "510" H 12470 5755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12330 5800 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 12400 5800 50  0001 C CNN
@@ -2018,10 +2006,10 @@ F 3 "https://www.mouser.ch/datasheet/2/427/dcrcwe3-1762152.pdf" H 10600 7400 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R24
+L Device:R R26
 U 1 1 6072BB38
 P 10300 7400
-F 0 "R24" H 10370 7446 50  0000 L CNN
+F 0 "R26" H 10370 7446 50  0000 L CNN
 F 1 "270" H 10370 7355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10230 7400 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/427/dcrcwe3-1762152.pdf" H 10300 7400 50  0001 C CNN
@@ -2326,4 +2314,37 @@ F 3 "https://www.mouser.ch/datasheet/2/54/crxxxxx-1858361.pdf" H 8250 8850 50  0
 $EndComp
 Wire Wire Line
 	8400 8850 8500 8850
+$Comp
+L 10Base2:BNC_shield J3
+U 1 1 607A8534
+P 14850 6100
+F 0 "J3" H 14850 6356 50  0000 C CNN
+F 1 "BNC" H 14850 6265 50  0000 C CNN
+F 2 "Coax:BNC_shield" H 15350 6550 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/18/031_71052_customer_drawing-1820911.pdf" H 15350 6550 50  0001 C CNN
+	1    14850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0119
+U 1 1 607B29CE
+P 15050 6100
+F 0 "#PWR0119" H 15050 5850 50  0001 C CNN
+F 1 "Earth" H 15050 5950 50  0001 C CNN
+F 2 "" H 15050 6100 50  0001 C CNN
+F 3 "~" H 15050 6100 50  0001 C CNN
+	1    15050 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 60839C70
+P 600 11100
+F 0 "H10" H 700 11146 50  0000 L CNN
+F 1 "MountingHole" H 700 11055 50  0000 L CNN
+F 2 "ISA_BUS_16Bit:Cutline" H 600 11100 50  0001 C CNN
+F 3 "~" H 600 11100 50  0001 C CNN
+	1    600  11100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
