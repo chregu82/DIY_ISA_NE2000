@@ -36,7 +36,7 @@ Reference | Quantity | Description | Possible source
 C7 | 1 | Capacitor 0.1uF, 50V, 0805 | [Mouser](https://www.mouser.com/ProductDetail/80-C0805C104M5R), [Reichelt](https://www.reichelt.com/vielschicht-kerko-100nf-50v-125-c-kem-x7r0805-100n-p207073.html)
 C19 | 1 | Capacitor 10nF, 1kV, 1206 | [Mouser](https://www.mouser.com/ProductDetail/710-885342208021), [Reichelt](https://www.reichelt.com/ch/de/smd-kerko-1206-10-nf-1000-v-10-mlcc-rnd-1501206b1033-p226057.html)
 C18 | 1 | Capacitor 47uF, 16V, 1210 | [Mouser](https://www.mouser.com/ProductDetail/81-GRM32EC81C476KE5L), [Reichelt](https://www.reichelt.com/vielschicht-kerko-47-f-16v-85-c-kem-x5r1210-47u-p207183.html)
-D1 | 1 | Diode 1N4150, SOD-123 | [Mouser](https://www.mouser.com/ProductDetail/78-1N4150W-E3-18), [Reichelt](https://www.reichelt.com/ch/de/schalt-diode-100-v-150-ma-sod-123-1n-4148w7f-dii-p219381.html)
+D1 | 1 | Diode BAS16, SOD-123 | [Mouser](https://www.mouser.com/ProductDetail/841-BAS16GWJ), [Reichelt](https://www.reichelt.com/gleichrichterdiode-75-v-0-215-a-sot-23-bas-16-nxp-p219347.html)
 J3 | 1 | BNC Connector | [Mouser](https://www.mouser.com/ProductDetail/538-73137-5003)
 Q1 | 1 | Switching Transistor NPN 600mA, SOT-23 | [Mouser](https://www.mouser.com/ProductDetail/771-PMBT2222A-T-R), [Reichelt](https://www.reichelt.com/bipolartransistor-npn-40v-0-6a-0-33w-sot-23-smbt-2222a-inf-p219350.html)
 R30 | 1 | Resistor 1M, 1/2W, 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CMP0805AFX-1004L)

@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# IL1209S
+#
+DEF IL1209S PS 0 30 Y Y 1 F N
+F0 "PS" 850 300 50 H V L CNN
+F1 "IL1209S" 850 200 50 H V L CNN
+F2 "IL1209S" 850 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/IL1209S.pdf" 850 0 50 H I L CNN
+F4 "Isolated DC/DC Converters DC-DC, 2W, unreg., single output, SIP" 850 -100 50 H I L CNN "Description"
+F5 "10.66" 850 -200 50 H I L CNN "Height"
+F6 "XP POWER" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "IL1209S" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "209-IL1209S" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=209-IL1209S" 850 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+X -VIN 1 0 0 200 R 50 50 0 0 P
+X +VIN 2 0 -100 200 R 50 50 0 0 P
+X -VOUT 3 0 -200 200 R 50 50 0 0 P
+X +VOUT 4 0 -300 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library
