@@ -44,7 +44,7 @@ R21, R31 | 2 | Resistor 1K, 1% , 0805 | [Mouser](https://www.mouser.com/ProductD
 R22-R25 | 4 | Resistor 510 Ohm , 0805 | [Mouser](https://www.mouser.com/ProductDetail/603-RC0805JR-07510RL), [Reichelt](https://www.reichelt.com/ch/de/smd-widerstand-0805-510-ohm-330-mw-1--rnd-155hp05-di-p250803.html)
 R26, R27 | 2 | Resistor 270 Ohm , 0805 | [Mouser](https://www.mouser.com/ProductDetail/71-CRCW0805270RJNEA)
 TR2 | 1 | AUI Transformer | [Mouser](https://www.mouser.com/ProductDetail/673-PE-65728NL)
-U4 | 1 | DC-DC Converter 12V to 9V, SIP4 | [Mouser](https://www.mouser.com/ProductDetail/209-IL1209S)
+U4 | 1 | DC-DC Converter 12V to 9V, SIP4 | [Mouser](https://www.mouser.com/ProductDetail/209-IL1209S), [Alternative Mouser, expensive](https://www.mouser.com/ProductDetail/919-RI3-1209S)
 U5 | 1 | BNC Transceiver DP8392CN, DIP16 | [Aliexpress](https://www.aliexpress.com), [Utsource](https://www.utsource.net/sch/dp8392cn.html)
 ### Dip switches (without PNP)
 Reference | Quantity | Description | Possible source

@@ -2402,7 +2402,7 @@ U 1 1 6082783F
 P 9900 8650
 F 0 "U4" H 10728 8546 50  0000 L CNN
 F 1 "IL1209S" H 10728 8455 50  0000 L CNN
-F 2 "IL1209S" H 10750 8750 50  0001 L CNN
+F 2 "Samac:DC_DC_12to9" H 10750 8750 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/2/IL1209S.pdf" H 10750 8650 50  0001 L CNN
 F 4 "Isolated DC/DC Converters DC-DC, 2W, unreg., single output, SIP" H 10750 8550 50  0001 L CNN "Description"
 F 5 "10.66" H 10750 8450 50  0001 L CNN "Height"
