@@ -1,6 +1,6 @@
 # DIY_ISA_NE2000
 A build yourself ISA NE2000 compatible network card based on the Realtek RTL8019AS controller.
-The PCB is designed to be usable as either an 8 bit or a 16 bit ISA card. If size matters, the 16 bit part can be cut off.
+The PCB is designed to be usable as either an 8 bit or a 16 bit ISA card. If size matters, the 16 bit part can be broken off.
 All components should be solderable by hand, although the RTL8019 chip is probably challenging. The smallest resistor or cap is in a 0805 case.
 There are several hardware options:
 - 10BaseT
@@ -62,4 +62,11 @@ U3 | 1 | Socket DIP32, width 15.24mm | [Mouser](https://www.mouser.com/ProductDe
 U3 | 1 | Flash 1MBit DIP32 | [Mouser](https://www.mouser.com/ProductDetail/804-39SF010A7CPHE), [Reichelt](https://www.reichelt.com/multi-nor-flash-speicher-1-mb-128-k-x-8-5-v-dip-32-39sf01070-4c-p-p266393.html)
 ### ISA bracket
 The mounting holes in the PCB are designed for the [Keystone 9202 Bracket](https://www.mouser.ch/ProductDetail/534-9202). Holes would have to be cut into the metal. There's no drawing yet.
-I'm going to design a 3D printable bracket in the near future.
+I designed a 3D printable [ISA bracket](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Bracket) with holes for 10BaseT and 10Base2.
+### Soldering
+- Flux is probably of help
+- You may want to use some kind of magnification
+- Check if the pins made a solid connection
+- Check for solder bridges
+- Go from small to big
+- Always check your power rails (at the big caps) for shorts before putting it in your computer
