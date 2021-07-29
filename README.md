@@ -1,5 +1,6 @@
 # DIY_ISA_NE2000
 A build yourself ISA NE2000 compatible network card based on the Realtek RTL8019AS controller.
+<img src="front.jpg" width="48%" /><img src="back.jpg" width="50%" />
 The PCB is designed to be usable as either an 8 bit or a 16 bit ISA card. If size matters, the 16 bit part can be broken off.
 All components should be solderable by hand, although the RTL8019 chip is probably challenging. The smallest resistor or cap is in a 0805 case.
 There are several hardware options:
