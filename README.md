@@ -10,13 +10,13 @@ There are several hardware options:
 - Boot ROM
 ## Hardware
 ### PCB
-PCBs can be ordered from your favourite PCB supplier, e.g. JLCPCB or PCBway by using the provided gerber files.
+PCBs can be ordered from your favourite PCB supplier, e.g. JLCPCB or PCBway by using the provided [gerber files](https://github.com/chregu82/DIY_ISA_NE2000/blob/main/PCB/gerber/gerber.zip).
 ### General parts (use always)
 Reference | Quantity | Description | Possible source
 ------------ | ------------- | -------------- | --------------
 C1, C2 | 2 | Capacitor 22pF, 25V, 0805 | [Mouser](https://www.mouser.com/ProductDetail/80-C0805C220K3HACTU), [Reichelt](https://www.reichelt.com/smd-vielschicht-keramikkondensator-22p-5--npo-g0805-22p-p13517.html)
 C8, C10-C15 | 7 | Capacitor 0.1uF, 50V, 0805 | [Mouser](https://www.mouser.com/ProductDetail/80-C0805C104M5R), [Reichelt](https://www.reichelt.com/vielschicht-kerko-100nf-50v-125-c-kem-x7r0805-100n-p207073.html)
-C16, C17 | 2 | Capacitor 47uF, 16V, 1210 | [Mouser](https://www.mouser.com/ProductDetail/81-GRM32EC81C476KE5L), [Reichelt](https://www.reichelt.com/vielschicht-kerko-47-f-16v-85-c-kem-x5r1210-47u-p207183.html)
+C17 | 1 | Capacitor 47uF, 16V, 1210 | [Mouser](https://www.mouser.com/ProductDetail/81-GRM32EC81C476KE5L), [Reichelt](https://www.reichelt.com/vielschicht-kerko-47-f-16v-85-c-kem-x5r1210-47u-p207183.html)
 R1 | 1 | Resistor 27K, 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CR0805FX-2702ELF), [Reichelt](https://www.reichelt.com/smd-widerstand-0805-27-kohm-125-mw-1--smd-0805-27-0k-p32903.html)
 R28, R29 | 2 | Resistor 0 Ohm, 0805 | [Mouser](https://www.mouser.com/ProductDetail/603-RC0805JR-070RL), [Reichelt](https://www.reichelt.com/smd-widerstand-0805-0-0-ohm-125-mw-rnd-0805-1-0-p212707.html)
 U1 | 1 | RTL8019AS | [Aliexpress](https://www.aliexpress.com), [Utsource](https://www.utsource.net/sch/rtl8019as.html), [Reichelt](https://www.reichelt.com/de/de/voll-duplex-ethernet-kontroller-plug-play-funktion-pqfp-100-rtl-8019as-p89309.html)
@@ -36,7 +36,7 @@ Reference | Quantity | Description | Possible source
 ------------ | ------------- | -------------- | --------------
 C7 | 1 | Capacitor 0.1uF, 50V, 0805 | [Mouser](https://www.mouser.com/ProductDetail/80-C0805C104M5R), [Reichelt](https://www.reichelt.com/vielschicht-kerko-100nf-50v-125-c-kem-x7r0805-100n-p207073.html)
 C19 | 1 | Capacitor 10nF, 1kV, 1206 | [Mouser](https://www.mouser.com/ProductDetail/710-885342208021), [Reichelt](https://www.reichelt.com/ch/de/smd-kerko-1206-10-nf-1000-v-10-mlcc-rnd-1501206b1033-p226057.html)
-C18 | 1 | Capacitor 47uF, 16V, 1210 | [Mouser](https://www.mouser.com/ProductDetail/81-GRM32EC81C476KE5L), [Reichelt](https://www.reichelt.com/vielschicht-kerko-47-f-16v-85-c-kem-x5r1210-47u-p207183.html)
+C16, C18 | 2 | Capacitor 47uF, 16V, 1210 | [Mouser](https://www.mouser.com/ProductDetail/81-GRM32EC81C476KE5L), [Reichelt](https://www.reichelt.com/vielschicht-kerko-47-f-16v-85-c-kem-x5r1210-47u-p207183.html)
 D1 | 1 | Diode BAS16, SOD-123 | [Mouser](https://www.mouser.com/ProductDetail/841-BAS16GWJ), [Reichelt](https://www.reichelt.com/gleichrichterdiode-75-v-0-215-a-sot-23-bas-16-nxp-p219347.html)
 J3 | 1 | BNC Connector | [Mouser](https://www.mouser.com/ProductDetail/538-73137-5003)
 Q1 | 1 | Switching Transistor NPN 600mA, SOT-23 | [Mouser](https://www.mouser.com/ProductDetail/771-PMBT2222A-T-R), [Reichelt](https://www.reichelt.com/bipolartransistor-npn-40v-0-6a-0-33w-sot-23-smbt-2222a-inf-p219350.html)
@@ -64,10 +64,28 @@ U3 | 1 | Flash 1MBit DIP32 | [Mouser](https://www.mouser.com/ProductDetail/804-3
 ### ISA bracket
 The mounting holes in the PCB are designed for the [Keystone 9202 Bracket](https://www.mouser.ch/ProductDetail/534-9202). Holes would have to be cut into the metal. There's no drawing yet.
 I designed a 3D printable [ISA bracket](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Bracket) with holes for 10BaseT and 10Base2.
-### Soldering
+### 8 bit operation
+For 8 bit computers, where size matters, the 16 bit part of the PCB can be broken off. However you have to make sure that the broken off traces don't connect to anything afterwards. It is probably a good idea to cut them before braking off the PCB part.
+### Soldering tips
 - Flux is probably of help
 - You may want to use some kind of magnification
 - Check if the pins made a solid connection
 - Check for solder bridges
 - Go from small to big
 - Always check your power rails (at the big caps) for shorts before putting it in your computer
+## Programming the EEPROM
+Before the card can work in your system, the RTL8019 chip needs a valid initial configuration. This can be done with the DOS tool pg8019.exe.
+- Download the files from the [tools directory](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Tools)
+- Make sure address 0x300 is free
+- Put the networking card in a free ISA slot
+- Boot to DOS
+- If you want, edit 8019as.cfg according to your needs (e.g. MAC address)
+- Run pg8019.exe
+- Turn off your PC
+
+After the EEPROM is programmed you should be able to use the card. Some settings could still be altered with the tool Rset8019.exe.
+## Drivers
+[DOS packet driver for 8 bit operation](bla)
+
+[DOS packet dricer for 16 bit operation](bla)
+
