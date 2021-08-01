@@ -30,7 +30,7 @@ C5, C6 | 2 | Capacitor 39pF, 2kV, 1206 | [Mouser](https://www.mouser.com/Product
 R2, R3 | 2 | Resistor 470 Ohm, 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CR0805FX-4700ELF)
 R4 | 1 | Resistor 200 Ohm, 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CR0805FX-2000ELF)
 J2 | 1 | RJ45 Connector | [Mouser](https://www.mouser.com/ProductDetail/523-RJHSE-5481)
-TR1 | 1 | LAN transformer | [Mouser](https://www.mouser.com/ProductDetail/652-PT61017PEL)
+TR1 | 1 | LAN transformer | [Mouser](https://www.mouser.com/ProductDetail/652-PT61017PEL), [Mouser alternative part](https://www.mouser.ch/ProductDetail/ABRACON/ALANS100X1-2F10ET)
 ### 10Base2 (BNC)
 Reference | Quantity | Description | Possible source
 ------------ | ------------- | -------------- | --------------
