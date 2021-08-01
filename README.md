@@ -85,7 +85,9 @@ Before the card can work in your system, the RTL8019 chip needs a valid initial 
 
 After the EEPROM is programmed you should be able to use the card. Some settings could still be altered with the tool Rset8019.exe.
 ## Drivers
-[DOS packet driver for 8 bit operation](bla)
+[DOS packet driver for 8 bit operation](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Drivers/8%20bit%20packet%20driver)
 
-[DOS packet dricer for 16 bit operation](bla)
+[DOS packet dricer for 16 bit operation](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Drivers/16%20bit%20packet%20driver)
+
+[Other drivers directly from Realtek](https://www.realtek.com/en/component/zoo/category/rtl8019as-software)
 
