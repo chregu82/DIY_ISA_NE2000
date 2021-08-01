@@ -44,7 +44,7 @@ R30 | 1 | Resistor 1M, 1/2W, 0805 | [Mouser](https://www.mouser.com/ProductDetai
 R21, R31 | 2 | Resistor 1K, 1% , 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CR0805FX-1001ELF), [Reichelt](https://www.reichelt.com/ch/de/smd-widerstand-0805-1-0-kohm-125-mw-1--smd-0805-1-00k-p32886.html)
 R22-R25 | 4 | Resistor 510 Ohm , 0805 | [Mouser](https://www.mouser.com/ProductDetail/603-RC0805JR-07510RL), [Reichelt](https://www.reichelt.com/ch/de/smd-widerstand-0805-510-ohm-330-mw-1--rnd-155hp05-di-p250803.html)
 R26, R27 | 2 | Resistor 270 Ohm , 0805 | [Mouser](https://www.mouser.com/ProductDetail/71-CRCW0805270RJNEA)
-TR2 | 1 | AUI Transformer | [Mouser](https://www.mouser.com/ProductDetail/673-PE-65728NL)
+TR2 | 1 | AUI Transformer | [Mouser](https://www.mouser.com/ProductDetail/673-PE-65728NL), [Mouser alternative](https://www.mouser.ch/ProductDetail/HALO-Electronics/TG01-1006NRL)
 U4 | 1 | DC-DC Converter 12V to 9V, SIP4 | [Mouser](https://www.mouser.com/ProductDetail/209-IL1209S), [Alternative Mouser, expensive](https://www.mouser.com/ProductDetail/919-RI3-1209S)
 U5 | 1 | BNC Transceiver DP8392CN, DIP16 | [Aliexpress](https://www.aliexpress.com), [Utsource](https://www.utsource.net/sch/dp8392cn.html)
 ### Dip switches (without PNP)
@@ -87,7 +87,7 @@ After the EEPROM is programmed you should be able to use the card. Some settings
 ## Drivers
 [DOS packet driver for 8 bit operation](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Drivers/8%20bit%20packet%20driver)
 
-[DOS packet dricer for 16 bit operation](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Drivers/16%20bit%20packet%20driver)
+[DOS packet driver for 16 bit operation](https://github.com/chregu82/DIY_ISA_NE2000/tree/main/Drivers/16%20bit%20packet%20driver)
 
 [Other drivers directly from Realtek](https://www.realtek.com/en/component/zoo/category/rtl8019as-software)
 
