@@ -30,7 +30,7 @@ C5, C6 | 2 | Capacitor 39pF, 2kV, 1206 | [Mouser](https://www.mouser.com/Product
 R2, R3 | 2 | Resistor 470 Ohm, 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CR0805FX-4700ELF)
 R4 | 1 | Resistor 200 Ohm, 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CR0805FX-2000ELF)
 J2 | 1 | RJ45 Connector | [Mouser](https://www.mouser.com/ProductDetail/523-RJHSE-5481)
-TR1 | 1 | LAN transformer | [Mouser](https://www.mouser.com/ProductDetail/652-PT61017PEL), [Mouser alternative part](https://www.mouser.ch/ProductDetail/ABRACON/ALANS100X1-2F10ET)
+TR1 | 1 | LAN transformer | [Mouser](https://www.mouser.com/ProductDetail/652-PT61017PEL), [Mouser alternative part](https://www.mouser.ch/ProductDetail/815-ALANS100X12F10ET)
 ### 10Base2 (BNC)
 Reference | Quantity | Description | Possible source
 ------------ | ------------- | -------------- | --------------
@@ -42,9 +42,9 @@ J3 | 1 | BNC Connector | [Mouser](https://www.mouser.com/ProductDetail/538-73137
 Q1 | 1 | Switching Transistor NPN 600mA, SOT-23 | [Mouser](https://www.mouser.com/ProductDetail/771-PMBT2222A-T-R), [Reichelt](https://www.reichelt.com/bipolartransistor-npn-40v-0-6a-0-33w-sot-23-smbt-2222a-inf-p219350.html)
 R30 | 1 | Resistor 1M, 1/2W, 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CMP0805AFX-1004L)
 R21, R31 | 2 | Resistor 1K, 1% , 0805 | [Mouser](https://www.mouser.com/ProductDetail/652-CR0805FX-1001ELF), [Reichelt](https://www.reichelt.com/ch/de/smd-widerstand-0805-1-0-kohm-125-mw-1--smd-0805-1-00k-p32886.html)
-R22-R25 | 4 | Resistor 510 Ohm , 0805 | [Mouser](https://www.mouser.com/ProductDetail/603-RC0805JR-07510RL), [Reichelt](https://www.reichelt.com/ch/de/smd-widerstand-0805-510-ohm-330-mw-1--rnd-155hp05-di-p250803.html)
-R26, R27 | 2 | Resistor 270 Ohm , 0805 | [Mouser](https://www.mouser.com/ProductDetail/71-CRCW0805270RJNEA)
-TR2 | 1 | AUI Transformer | [Mouser](https://www.mouser.com/ProductDetail/673-PE-65728NL), [Mouser alternative](https://www.mouser.ch/ProductDetail/HALO-Electronics/TG01-1006NRL)
+R22-R25 | 4 | Resistor 510 Ohm , 0805 | [Mouser](https://www.mouser.ch/ProductDetail/652-CR0805FX-5100ELF), [Reichelt](https://www.reichelt.com/ch/de/smd-widerstand-0805-510-ohm-330-mw-1--rnd-155hp05-di-p250803.html)
+R26, R27 | 2 | Resistor 270 Ohm , 0805 | [Mouser](https://www.mouser.ch/ProductDetail/652-CR0805FX-2700ELF)
+TR2 | 1 | AUI Transformer | [Mouser](https://www.mouser.com/ProductDetail/673-PE-65728NL), [Mouser alternative](https://www.mouser.ch/ProductDetail/493-TG01-1006NRL)
 U4 | 1 | DC-DC Converter 12V to 9V, SIP4 | [Mouser](https://www.mouser.com/ProductDetail/209-IL1209S), [Alternative Mouser, expensive](https://www.mouser.com/ProductDetail/919-RI3-1209S)
 U5 | 1 | BNC Transceiver DP8392CN, DIP16 | [Aliexpress](https://www.aliexpress.com), [Utsource](https://www.utsource.net/sch/dp8392cn.html)
 ### Dip switches (without PNP)
